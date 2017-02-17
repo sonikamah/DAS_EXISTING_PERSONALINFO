@@ -1,0 +1,33 @@
+.signup-wrapper {
+    margin-bottom: 25px;
+}
+
+.toggleBtn {
+    margin-bottom: 10px;
+    input[type="radio"]{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    input[type="radio"]{
+      & + label{
+            width: 125px;
+            padding: 10px;
+            border-radius: 10px 0px 0px 10px;
+            border:1px solid #ccc;
+            text-align: center;
+            &:hover{
+                cursor:pointer;
+            }
+            &:last-child {
+                border-radius: 0px 10px 10px 0px;
+            }
+      }
+      &:checked + label{
+        background: #7399c6;
+        border:1px solid transparent;
+        color: #fff;
+        cursor: default;
+      } 
+    }
+}

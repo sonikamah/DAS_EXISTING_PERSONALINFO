@@ -1,0 +1,57 @@
+
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { browserHistory, withRouter } from 'react-router';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import update from 'react-addons-update';
+
+import * as Actions from './actions';
+
+class {{capitalize name}} extends Component {
+    constructor(props) {
+        super(props);
+    }
+{{#if hooksNeeded}}
+    componentDidMount() {
+    }
+
+    shouldComponentUpdate() {
+    }
+
+    componentWillUpdate(){
+
+    }
+    componentWillReceiveProps(){
+        
+    }
+    componentDidUpdate(){
+
+    }
+    componentWillUnmount(){
+
+    }
+ {{/if}}   
+    render() {
+        return(
+            <div>
+                
+            </div>
+        )
+    }
+}
+{{name}}.propTypes = {
+};
+
+// Subscribe component to redux store and merge the state into component's props
+const mapStateToProps = (state, ownProps) => ({
+});
+
+const mapDispatchToProps= (dispatch)=> {
+    return bindActionCreators(Actions, dispatch)
+}
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)({{capitalize name}});

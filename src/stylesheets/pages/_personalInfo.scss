@@ -1,0 +1,163 @@
+.field {
+    @media(min-width: $screen-md) {
+        text-align: left;
+    }
+}
+
+.multiInputContainer {
+    .error-message {
+        text-align: left;
+    }
+    &.bm-type_number {
+        text-align: left;
+        position: relative;
+        padding-bottom: 5px;
+
+        .error-message {
+            position: absolute;
+            left: -1px;
+            top: 30px;
+        }
+    }
+    @media(min-width: $screen-md) {
+        display: inline-block;
+        margin-right: 10px;
+        width: 20%;
+
+        .custom-input {
+            width: 100%;
+        }
+
+        &.bm-type_number {
+            width: 62%;
+
+            .error-message {
+                top: 40px;
+            }
+        }
+        &.bm-type_singleInput {
+            width: 95%;
+            text-align: left;
+            margin-right: 0;
+            .error-message {
+                margin-left: 35.3%;
+            }
+        }
+    }
+    @media(min-width: $screen-lg) {
+        &.bm-type_singleInput {
+            width: 94%;
+        }
+    }
+}
+
+.custom-label {
+    text-align: left;
+    display: block;
+    font-size: 12px;
+    @media(min-width: $screen-md) {
+        display: inline-block;
+        margin-right: 20px;
+        width: 33.4%;
+        text-align: right;
+        vertical-align: middle;
+        margin-bottom: 15px;
+    }
+}
+
+.custom-sub-label {
+    display: block;
+    font-size: 11px;
+    text-align: left;
+    color: #aaa;
+    font-weight: normal;
+
+    @media(min-width: $screen-md) {
+        width: 66%;
+        max-width: 350px;
+        font-size: 13px;
+    }
+}
+
+.custom-input {
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+
+    &.bm-width_small {
+    	width: 50px;
+    	margin-right: 10px;
+    }
+
+    @media(min-width: $screen-md) {
+        display: inline-block;
+        width: 66%;
+        vertical-align: middle;
+        margin-bottom: 15px;
+        max-width: 350px;
+        padding: 10px;
+    }
+}
+
+.separator {
+	margin-right: 10px;
+    @media(min-width: $screen-md) {
+        margin-bottom: 15px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.custom-select {
+    border: none;
+    padding: 10px;
+    background-color: #efefed;
+    width: 150px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 15px;
+
+    option {
+        background-color: #fff;
+    }
+
+    &.bm-type_white {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        width: 100%;
+    }
+
+    @media(min-width: $screen-md) {
+        vertical-align: middle;
+
+        &.bm-type_white {
+            display: inline-block;
+            width: 62%;
+        }
+    }
+}
+
+
+.uneditableText {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 10px;
+
+    @media(min-width: $screen-md) {
+        margin-bottom: 15px;
+    }
+}
+
+.date-container {
+    position: relative;
+
+    .error-message {
+        position: absolute;
+        left: -1px;
+        top: 40px;
+    }
+}
